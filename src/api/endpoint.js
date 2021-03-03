@@ -1,0 +1,1 @@
+export const endpoint = 'http://staccah.fattureincloud.it/testfrontend/data.json';

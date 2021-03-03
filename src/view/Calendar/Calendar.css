@@ -1,0 +1,8 @@
+.calendar{
+    /* Layout */
+    display: flex;    
+
+    /* Size */
+    width: 973px;
+    height: 110px;
+}

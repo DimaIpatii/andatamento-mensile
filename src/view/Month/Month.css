@@ -1,0 +1,95 @@
+.month{
+    /* Size */
+    width: 80px;
+    height: 110px;
+    box-sizing: content-box;
+   
+    /* View */
+    border-top: 1px solid  #EBECF0;
+    border-bottom: 3px solid  #C6E7F5;;
+    border-right: 1px solid  #EBECF0;
+
+    /* Animation */
+    transition: border-bottom .3s;
+
+    /* Font */
+
+    /* Disable Text selection */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.month:first-child{
+    /* View */
+    border-left: 1px solid  #EBECF0;
+}
+
+.month__name{
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Size */
+    height: 29px;
+
+    /* View */
+    border-bottom: 1px solid  #EBECF0;
+    
+    /* Font */
+    font-size: 12px;
+    font-weight: 500;
+    color: #0D97D5;
+}
+.month__content{
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding-left: 8px;
+    padding-bottom: 7px;
+
+    /* Size */
+    height: calc(100% - 29px);
+
+    /* View */
+    cursor: pointer;
+}
+.month__chart{
+    /* Layout */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+
+    /* Size */
+    width: 100%;
+    height: 1px;
+
+    /* View */
+    background-color: #E0F1EB;
+}
+
+.month__docs{
+    /* Font */
+    font-weight: 400;
+    color: #6F7E86;
+}
+
+.month__income{
+    /* Font */
+    font-weight: 500;
+    color: #00875A;
+}
+
+
+/* Utitlities */
+.selected{
+    border-bottom: 3px solid  #0D97D5;
+}
+.focused{
+    border-bottom: 3px solid  #65cfff;
+}
